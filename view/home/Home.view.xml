@@ -1,0 +1,68 @@
+<mvc:View controllerName="app.root.controller.home.Home" xmlns:html="http://www.w3.org/1999/xhtml"
+          xmlns="sap.m"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:core="sap.ui.core"
+          xmlns:uxap="sap.uxap"
+          xmlns:l="sap.ui.layout">
+
+    <Page title="{i18n>title}">
+        <content>
+            <uxap:ObjectPageLayout
+                    id="ObjectPageLayout"
+                    enableLazyLoading="true"
+                    useIconTabBar="true"
+                    showTitleInHeaderContent="true">
+                <uxap:headerTitle>
+                    <uxap:ObjectPageHeader objectImageURI="./resources/images/2.jpg"
+                                           objectTitle="Murali Lakshmanan"
+                                           objectImageShape="Circle"
+                                           objectSubtitle="SAPUI5 / Fiori consultant">
+                        <uxap:actions>
+                            <uxap:ObjectPageHeaderActionButton icon="sap-icon://pull-down"
+                                                               text="show section"
+                                                               type="Emphasized"/>
+                            <uxap:ObjectPageHeaderActionButton icon="sap-icon://show"
+                                                               text="show state"
+                                                               type="Emphasized"/>
+                        </uxap:actions>
+                    </uxap:ObjectPageHeader>
+                </uxap:headerTitle>
+
+                <uxap:headerContent>
+                    <l:VerticalLayout>
+                        <Link text="+91 809-575-1234" press=""/>
+                        <Link text="murali0286@gmail.com" press="onPressEmail"/>
+                        <Label text="Bangalore, India"/>
+                    </l:VerticalLayout>
+
+                    <l:HorizontalLayout>
+                        <Image src="./resources/images/LinkedIn.png"
+                               press="onPressLinkedIn"
+                               class=""/>
+                        <!--<Image src="./resources/images/Twitter.svg"-->
+                               <!--press="onPressTwitter"-->
+                               <!--class="sapUiTinyMarginLeft"/>-->
+                    </l:HorizontalLayout>
+
+                    <l:VerticalLayout>
+                        <!--<Label text="Hello! I am Tim and I use UxAP"/>-->
+                        <Text width="200px"
+                                text="Hi, I'm Murali. I am passionate about what I do and I'll go the extra mile to make the customer win."/>
+                        <!--<VBox height="63px">-->
+                            <!--<Label text="Achieved goals"/>-->
+                            <!--<ProgressIndicator-->
+                                    <!--percentValue="30"-->
+                                    <!--displayValue="30%"-->
+                                    <!--showValue="true"-->
+                                    <!--state="None"/>-->
+                        <!--</VBox>-->
+                    </l:VerticalLayout>
+
+                    <!--<l:VerticalLayout>-->
+                        <!--<Label text="Bangalore, India"/>-->
+                    <!--</l:VerticalLayout>-->
+                </uxap:headerContent>
+            </uxap:ObjectPageLayout>
+        </content>
+    </Page>
+</mvc:View>

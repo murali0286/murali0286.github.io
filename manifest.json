@@ -1,7 +1,8 @@
 {
-	"_version": "1.5.0",
+	"_version": "1.1.0",
 	"sap.app": {
-		"id": "app.rootSample",
+		"_version": "1.1.0",
+		"id": "app.root",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -16,6 +17,7 @@
 	},
 
 	"sap.ui": {
+		"_version": "1.1.0",
 		"technology": "UI5",
 		"icons": {
 			"icon": "",
@@ -32,21 +34,22 @@
 		},
 		"supportedThemes": [
 			"sap_hcb",
-			"sap_belize"
+			"sap_belize",
+			"sap_bluecrystal"
 		]
 	},
 
 	"sap.ui5": {
+		"_version": "1.1.0",
 		"rootView": {
-			"viewName": "app.root.view.Home",
+			"viewName": "app.root.view.App",
 			"type": "XML"
 		},
 		"dependencies": {
 			"minUI5Version": "1.30.0",
 			"libs": {
-				"sap.ui.core": {},
 				"sap.m": {},
-				"sap.ui.layout": {}
+				"sap.uxap": {}
 			}
 		},
 		"contentDensities": {
@@ -65,6 +68,33 @@
 			"css": [{
 				"uri": "css/style.css"
 			}]
+		},
+		"routing" : {
+			"config" : {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "app.root.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"transition": "flip",
+				"greedy": false,
+				"bypassed": {
+					"target": "notFound"
+				}
+			},
+			"routes" : [
+				{
+					"pattern": "",
+					"name": "home",
+					"target": "home"
+				}
+			],
+			"targets" : {
+				"home" : {
+					"viewName" : "home.Home",
+					"viewLevel" : 1
+				}
+			}
 		}
 	}
 }

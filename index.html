@@ -13,11 +13,12 @@
             data-sap-ui-libs="sap.m,sap.ui.core"
             data-sap-ui-theme="sap_belize"
             data-sap-ui-compatVersion="edge"
-            data-sap-ui-resourceroots='{"app.root": "."}'
             data-sap-ui-bindingSyntax="complex"
             data-sap-ui-preload="async"
             data-sap-ui-language="en"
-            data-sap-ui-frameOptions="trusted">
+            data-sap-ui-resourceroots='{
+                "app.root": "./"
+            }'>
     </script>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -31,6 +32,7 @@
 
                 // initialize the UI component
                 new Shell({
+                    appWidthLimited : true,
                     app: new ComponentContainer({
                         height: "100%",
                         name: "app.root"
