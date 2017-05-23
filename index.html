@@ -1,45 +1,48 @@
 <!DOCTYPE HTML>
 <html>
 
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<title>Me</title>
+    <title>Me</title>
 
-		<script id="sap-ui-bootstrap"
-			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-			data-sap-ui-libs="sap.m"
-			data-sap-ui-theme="sap_belize"
-			data-sap-ui-compatVersion="edge"
-			data-sap-ui-resourceroots='{"app.root": "."}'
-			data-sap-ui-frameOptions="trusted">
-		</script>
+    <script id="sap-ui-bootstrap"
+            src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m,sap.ui.core"
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-resourceroots='{"app.root": "."}'
+            data-sap-ui-bindingSyntax="complex"
+            data-sap-ui-preload="async"
+            data-sap-ui-language="en"
+            data-sap-ui-frameOptions="trusted">
+    </script>
 
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-		<script>
-			sap.ui.getCore().attachInit(function() {
-				sap.ui.require([
-				"sap/m/Shell",
-				"sap/ui/core/ComponentContainer",
-			], function (Shell, ComponentContainer) {
-           
-				// initialize the UI component
-				new Shell({
-					app: new ComponentContainer({
-						height : "100%",
-						name : "app.root"
-					})
-				}).placeAt("content");
-			});
-	
-			});
-		</script>
-	</head>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            sap.ui.require([
+                "sap/m/Shell",
+                "sap/ui/core/ComponentContainer",
+            ], function (Shell, ComponentContainer) {
 
-	<body class="sapUiBody" id="content">
-	</body>
+                // initialize the UI component
+                new Shell({
+                    app: new ComponentContainer({
+                        height: "100%",
+                        name: "app.root"
+                    })
+                }).placeAt("content");
+            });
+
+        });
+    </script>
+</head>
+
+<body class="sapUiBody" id="content">
+</body>
 
 </html>
