@@ -62,6 +62,11 @@
 				"settings": {
 					"bundleName": "app.root.i18n.i18n"
 				}
+			},
+			"Resume": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "./model/resume.json",
+				"async": true
 			}
 		},
 		"resources": {

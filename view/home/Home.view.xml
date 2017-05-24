@@ -3,7 +3,10 @@
           xmlns:mvc="sap.ui.core.mvc"
           xmlns:core="sap.ui.core"
           xmlns:uxap="sap.uxap"
-          xmlns:l="sap.ui.layout">
+          xmlns:l="sap.ui.layout"
+          xmlns:summary="app.root.controller.home.blocks.summary"
+          xmlns:employment="app.root.controller.home.blocks.employment"
+          xmlns:education="app.root.controller.home.blocks.education">
 
     <Page title="{i18n>title}">
         <content>
@@ -11,45 +14,103 @@
                     id="ObjectPageLayout"
                     enableLazyLoading="true"
                     useIconTabBar="true"
-                    showTitleInHeaderContent="true">
+                    showTitleInHeaderContent="true"
+                    showHeaderContent="true"
+                    subSectionLayout="TitleOnLeft">
+
+                <!--Header Title-->
                 <uxap:headerTitle>
                     <uxap:ObjectPageHeader
                             id="MePageHeader"
-                            objectImageURI="./resources/images/2.jpg"
-                            objectTitle="Murali Lakshmanan"
+                            objectImageURI="{Resume>/Avatar}"
+                            objectTitle="{Resume>/Title}"
                             objectImageShape="Circle"
-                            objectSubtitle="SAPUI5 / Fiori consultant"
-                    >
+                            objectSubtitle="{Resume>/SubTitle}">
                         <uxap:actions>
-                            <uxap:ObjectPageHeaderActionButton icon="sap-icon://pull-down"
-                                                               text="show section"
-                                                               type="Emphasized"
-                                                                press="onDownloadResume"/>
-                            <uxap:ObjectPageHeaderActionButton icon="sap-icon://show"
-                                                               text="show state"
-                                                               type="Emphasized"/>
+                            <uxap:ObjectPageHeaderActionButton
+                                    icon="sap-icon://pull-down"
+                                    text="show section"
+                                    type="Emphasized"
+                                    press="onDownloadResume"/>
                         </uxap:actions>
                     </uxap:ObjectPageHeader>
                 </uxap:headerTitle>
 
+                <!--Header Content-->
                 <uxap:headerContent>
                     <l:VerticalLayout>
-                        <Link text="+91 809-575-1234" press=""/>
-                        <Link text="murali0286@gmail.com" press="onPressEmail"/>
-                        <Label text="Bangalore, India"/>
+                        <ObjectAttribute title="" text="{Resume>/PhoneNumber}" active="true"/>
+                        <ObjectAttribute title="" text="{Resume>/Email}" press="onPressEmail" active="true"/>
+                        <ObjectStatus title="" text="{Resume>/Location}"/>
                     </l:VerticalLayout>
 
                     <l:HorizontalLayout>
-                        <Image src="./resources/images/LinkedIn.png"
+                        <Image src="./resources/images/logo/linkedin.svg"
                                press="onPressLinkedIn"
+                               class="sapUiTinyMarginEnd"/>
+                        <Image src="./resources/images/logo/twitter.svg"
+                               press="onPressTwitter"
+                               class="sapUiTinyMarginEnd"/>
+                        <Image src="./resources/images/logo/SAP.gif"
+                               press="onPressSAP"
                                class=""/>
                     </l:HorizontalLayout>
 
                     <l:VerticalLayout>
                         <Text width="200px"
-                              text="Hi, I'm Murali. I am passionate about what I do and I'll go the extra mile to make the customer win."/>
+                              text="{Resume>/ShortIntro}"/>
                     </l:VerticalLayout>
                 </uxap:headerContent>
+
+                <!--Sections-->
+                <uxap:sections>
+                    <!--SUMMARY -->
+                    <uxap:ObjectPageSection title="Summary">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection title=" " mode="Collapsed">
+                                <uxap:blocks>
+                                    <summary:SummaryBlock id="SummaryBlock" showSubSectionMore="true"/>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
+
+                    <!--Employment-->
+                    <uxap:ObjectPageSection title="Employment">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection title="Current Employment">
+                                <uxap:blocks>
+                                    <employment:CurrentEmploymentBlock id="CurrentEmploymentBlock"/>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                            <uxap:ObjectPageSubSection title="Previous Employment">
+                                <uxap:blocks>
+                                    <employment:PreviousEmploymentBlock id="PreviousEmploymentBlock"/>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
+
+                    <!--Education-->
+                    <uxap:ObjectPageSection title="Education / Certification">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection title="">
+                                <uxap:blocks>
+                                    <education:EducationBlock id="EducationBlock"/>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
+
+                    <!--Project Details-->
+
+                    <!--Achievements-->
+
+                    <!--Strengths-->
+
+                    <!--Personal Details-->
+
+                </uxap:sections>
             </uxap:ObjectPageLayout>
         </content>
     </Page>

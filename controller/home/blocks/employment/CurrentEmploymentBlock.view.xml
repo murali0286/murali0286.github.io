@@ -1,0 +1,17 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+		  xmlns:layout="sap.ui.layout"
+		  xmlns:forms="sap.ui.layout.form"
+		  xmlns="sap.m">
+	<forms:SimpleForm
+			maxContainerCols="1"
+			layout="ResponsiveGridLayout"
+			width="100%">
+		<layout:VerticalLayout>
+			<ImageContent src="{Resume>/Employment/Current/Logo}" class="sapUiTinyMarginBottom" description="Logo"/>
+			<Label text="{Resume>/Employment/Current/EmployerName}" design="Bold"/>
+			<Text text="{Resume>/Employment/Current/JobTitle}"/>
+			<Text text="({Resume>/Employment/Current/From} - Till date)"/>
+			<Text text="{Resume>/Employment/Current/Description}" class="sapUiMediumMarginTop"/>
+		</layout:VerticalLayout>
+	</forms:SimpleForm>
+</mvc:View>

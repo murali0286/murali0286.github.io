@@ -1,0 +1,29 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+		  xmlns:layout="sap.ui.layout"
+		  xmlns:forms="sap.ui.layout.form"
+		  xmlns="sap.m">
+	<forms:SimpleForm
+			maxContainerCols="1"
+			layout="ResponsiveGridLayout"
+			width="100%">
+		<layout:VerticalLayout
+			content="{
+				path : 'Resume>/Employment/Previous'
+				}">
+			<FlexBox
+					alignItems="Start"
+					justifyContent="Start"
+					direction="Column"
+			>
+				<items>
+					<ImageContent src="{Resume>Logo}" class="sapUiTinyMarginBottom" description="Logo"/>
+					<Label text="{Resume>EmployerName}" design="Bold"/>
+					<Text text="{Resume>JobTitle}"/>
+					<Text text="({Resume>From} - {Resume>Till})"/>
+					<Text text=" "/>
+					<Text text="{Resume>Description}"/>
+				</items>
+			</FlexBox>
+		</layout:VerticalLayout>
+	</forms:SimpleForm>
+</mvc:View>

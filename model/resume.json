@@ -1,0 +1,91 @@
+{
+  "Title": "Murali Lakshmanan",
+  "SubTitle": "SAPUI5/Fiori consultant, UI Developer",
+  "Avatar": "./resources/images/person/2.jpg",
+  "PhoneNumber": "+91 809-575-1234",
+  "Email": "murali0286@gmail.com",
+  "LinkedInProfileId": "murali-lakshmanan-15ab66b1",
+  "TwitterProfileId": "murali0286",
+  "SAPProfileId": "murali0286",
+  "Location": "Bangalore, India",
+  "ShortIntro": "Hi, I'm Murali. I am passionate about what I do and I'll go the extra mile to make the customer win.",
+  "Summary" : [
+    {
+      "Point" : "SAP UI5/Fiori Architecture, Design and Development",
+      "Description" : "Expert Knowledge in SAP UI5/Fiori architecture, design and development"
+    },
+    {
+      "Point" : "OData Services",
+      "Description" : "Expertise in Developing, Consuming & Integrating oData services with SAP UI5 / Fiori applications. Have successfully designed and implemented Promises for oData CURD operations in order to address the Call back doom (nested call back) issue"
+    }
+  ],
+  "Employment" : {
+    "Current" : {
+      "EmployerName" : "PayPal India Pvt. Ltd",
+      "Logo" : "./resources/images/logo/paypal.svg",
+      "JobTitle" : "MTS1",
+      "Role" : "",
+      "Description" : "",
+      "From" : "May 2014"
+    },
+    "Previous" : [
+      {
+        "EmployerName" : "Computer Services Corporations India Pvt., CSC",
+        "Logo" : "./resources/images/logo/csc.svg",
+        "JobTitle" : "Software Engineer",
+        "Role" : "",
+        "Description" : "",
+        "From" : "March 2011",
+        "Till" : "May 2014"
+      },
+      {
+        "EmployerName" : "Congnizant Technology Solutions India Pvt., CTS",
+        "Logo" : "./resources/images/logo/csc.svg",
+        "JobTitle" : "Programmer Analyst",
+        "Role" : "",
+        "Description" : "",
+        "From" : "Dec 2017",
+        "Till" : "May 2011"
+      }
+    ]
+  },
+  "Education" : [
+    {
+      "CourseName" : "Graduate in Chemistry",
+      "University" : "Pondicherry University",
+      "Description" : "",
+      "Logo" : ""
+    },
+    {
+      "CourseName" : "Developing Web Apps with SAPUI5",
+      "University" : "Open SAP",
+      "Description" : "",
+      "Logo" : ""
+    },
+    {
+      "CourseName" : "Developing Own Fiori App in the Cloud",
+      "University" : "Open SAP",
+      "Description" : "",
+      "Logo" : ""
+    },
+    {
+      "CourseName" : "Website Performance Optimization",
+      "University" : "Udacity",
+      "Description" : "",
+      "Logo" : ""
+    },
+    {
+      "CourseName" : "JavaScript Design Patterns",
+      "University" : "Udacity",
+      "Description" : "",
+      "Logo" : ""
+    },
+    {
+      "CourseName" : "Algorithms and Data Structure",
+      "University" : "Coursera",
+      "Description" : "",
+      "Logo" : ""
+    }
+
+  ]
+}

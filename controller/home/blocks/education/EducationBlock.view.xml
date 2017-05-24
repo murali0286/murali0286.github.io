@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          xmlns:layout="sap.ui.layout"
+          xmlns:forms="sap.ui.layout.form"
+          xmlns="sap.m">
+    <List items="{Resume>/Education}">
+        <items>
+            <StandardListItem
+                    title="{Resume>CourseName}"
+                    description="{Resume>University}"
+                    icon="{Resume>Logo}"
+                    iconDensityAware="false"
+                    iconInset="false"/>
+        </items>
+    </List>
+</mvc:View>
