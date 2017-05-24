@@ -19,6 +19,14 @@ sap.ui.define([
 
         onPressEmail : function(oEvent) {
 
+		},
+
+        onDownloadResume : function(oEvent) {
+
+            var link = document.createElement("a");
+            link.download = name;
+            link.href = uri;
+            link.click();
 		}
 	});
 });

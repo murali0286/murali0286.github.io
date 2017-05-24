@@ -13,14 +13,18 @@
                     useIconTabBar="true"
                     showTitleInHeaderContent="true">
                 <uxap:headerTitle>
-                    <uxap:ObjectPageHeader objectImageURI="./resources/images/2.jpg"
-                                           objectTitle="Murali Lakshmanan"
-                                           objectImageShape="Circle"
-                                           objectSubtitle="SAPUI5 / Fiori consultant">
+                    <uxap:ObjectPageHeader
+                            id="MePageHeader"
+                            objectImageURI="./resources/images/2.jpg"
+                            objectTitle="Murali Lakshmanan"
+                            objectImageShape="Circle"
+                            objectSubtitle="SAPUI5 / Fiori consultant"
+                    >
                         <uxap:actions>
                             <uxap:ObjectPageHeaderActionButton icon="sap-icon://pull-down"
                                                                text="show section"
-                                                               type="Emphasized"/>
+                                                               type="Emphasized"
+                                                                press="onDownloadResume"/>
                             <uxap:ObjectPageHeaderActionButton icon="sap-icon://show"
                                                                text="show state"
                                                                type="Emphasized"/>
@@ -39,28 +43,12 @@
                         <Image src="./resources/images/LinkedIn.png"
                                press="onPressLinkedIn"
                                class=""/>
-                        <!--<Image src="./resources/images/Twitter.svg"-->
-                               <!--press="onPressTwitter"-->
-                               <!--class="sapUiTinyMarginLeft"/>-->
                     </l:HorizontalLayout>
 
                     <l:VerticalLayout>
-                        <!--<Label text="Hello! I am Tim and I use UxAP"/>-->
                         <Text width="200px"
-                                text="Hi, I'm Murali. I am passionate about what I do and I'll go the extra mile to make the customer win."/>
-                        <!--<VBox height="63px">-->
-                            <!--<Label text="Achieved goals"/>-->
-                            <!--<ProgressIndicator-->
-                                    <!--percentValue="30"-->
-                                    <!--displayValue="30%"-->
-                                    <!--showValue="true"-->
-                                    <!--state="None"/>-->
-                        <!--</VBox>-->
+                              text="Hi, I'm Murali. I am passionate about what I do and I'll go the extra mile to make the customer win."/>
                     </l:VerticalLayout>
-
-                    <!--<l:VerticalLayout>-->
-                        <!--<Label text="Bangalore, India"/>-->
-                    <!--</l:VerticalLayout>-->
                 </uxap:headerContent>
             </uxap:ObjectPageLayout>
         </content>
