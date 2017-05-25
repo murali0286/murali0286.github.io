@@ -6,7 +6,10 @@
           xmlns:l="sap.ui.layout"
           xmlns:summary="app.root.controller.home.blocks.summary"
           xmlns:employment="app.root.controller.home.blocks.employment"
-          xmlns:education="app.root.controller.home.blocks.education">
+          xmlns:education="app.root.controller.home.blocks.education"
+          xmlns:misc="app.root.controller.home.blocks.misc"
+          xmlns:personal="app.root.controller.home.blocks.personal"
+          xmlns:project="app.root.controller.home.blocks.project">
 
     <Page title="{i18n>title}">
         <content>
@@ -22,10 +25,10 @@
                 <uxap:headerTitle>
                     <uxap:ObjectPageHeader
                             id="MePageHeader"
-                            objectImageURI="{Resume>/Avatar}"
-                            objectTitle="{Resume>/Title}"
+                            objectImageURI="{Resume>/Header/Avatar}"
+                            objectTitle="{Resume>/Header/Title}"
                             objectImageShape="Circle"
-                            objectSubtitle="{Resume>/SubTitle}">
+                            objectSubtitle="{Resume>/Header/SubTitle}">
                         <uxap:actions>
                             <uxap:ObjectPageHeaderActionButton
                                     icon="sap-icon://pull-down"
@@ -39,9 +42,9 @@
                 <!--Header Content-->
                 <uxap:headerContent>
                     <l:VerticalLayout>
-                        <ObjectAttribute title="" text="{Resume>/PhoneNumber}" active="true"/>
-                        <ObjectAttribute title="" text="{Resume>/Email}" press="onPressEmail" active="true"/>
-                        <ObjectStatus title="" text="{Resume>/Location}"/>
+                        <ObjectAttribute title="" text="{Resume>/Personal/PhoneNumber/Primary}" active="true"/>
+                        <ObjectAttribute title="" text="{Resume>/Personal/EMail/Primary}" press="onPressEmail" active="true"/>
+                        <ObjectStatus title="" text="{Resume>/Personal/CurrentLocation}"/>
                     </l:VerticalLayout>
 
                     <l:HorizontalLayout>
@@ -57,9 +60,13 @@
                     </l:HorizontalLayout>
 
                     <l:VerticalLayout>
-                        <Text width="200px"
-                              text="{Resume>/ShortIntro}"/>
+                        <Text width="400px"
+                                text="{Resume>/Header/ShortIntro}">
+                        </Text>
                     </l:VerticalLayout>
+
+                    <Button text="Travel Ready" press="onTravelReady" type="Transparent" icon="sap-icon://flight" />
+
                 </uxap:headerContent>
 
                 <!--Sections-->
@@ -103,12 +110,53 @@
                     </uxap:ObjectPageSection>
 
                     <!--Project Details-->
+                    <uxap:ObjectPageSection title="Projects">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection title="SAP UI / Fiori">
+                                <uxap:blocks>
+                                    <!--<project:CurrentEmploymentBlock id="CurrentEmploymentBlock"/>-->
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                            <uxap:ObjectPageSubSection title="Tool Development">
+                                <uxap:blocks>
+                                    <!--<project:PreviousEmploymentBlock id="PreviousEmploymentBlock"/>-->
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
 
-                    <!--Achievements-->
-
+                    <!--Achievements & Strengths-->
+                    <uxap:ObjectPageSection title="Achievements / Strengths">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection title="Achievements">
+                                <uxap:blocks>
+                                    <misc:AchievementBlock id="AchievementBlock"/>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                            <uxap:ObjectPageSubSection title="Strengths">
+                                <uxap:blocks>
+                                    <misc:StrengthBlock id="StrengthBlock"/>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
                     <!--Strengths-->
 
                     <!--Personal Details-->
+                    <uxap:ObjectPageSection title="Personal">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection title=" ">
+                                <uxap:blocks>
+                                    <personal:PhoneNumberBlock id="PhoneNumberBlock"/>
+                                    <personal:MailingBlock id="MailingBlock" columnLayout="1"/>
+                                    <personal:AdressBlock id="AdressBlock"/>
+                                    <personal:SocialBlock id="SocialBlock"/>
+                                    <personal:OtherBlock id="OtherBlock" />
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
+
 
                 </uxap:sections>
             </uxap:ObjectPageLayout>

@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+		  xmlns:layout="sap.ui.layout"
+		  xmlns:core="sap.ui.core"
+		  xmlns:forms="sap.ui.layout.form"
+		  xmlns="sap.m">
+	<forms:SimpleForm labelSpanL="4"
+					  labelSpanM="4"
+					  labelSpanS="4"
+					  emptySpanL="0"
+					  emptySpanM="0"
+					  emptySpanS="0"
+					  maxContainerCols="3"
+					  layout="ResponsiveLayout"
+					  width="100%">
+		<core:Title text="Other Details"></core:Title>
+		<Label text="Date Of Birth"/>
+		<Text text="{Resume>/Personal/Misc/DOB}"/>
+		<Label text="Marital Status"/>
+		<Text text="{Resume>/Personal/Misc/MaritalStatus}"/>
+		<Label text="Father's Name"/>
+		<Text text="{Resume>/Personal/Misc/FatherName}"/>
+		<Label text="Language"/>
+		<Text text="{Resume>/Personal/Misc/Languages}"/>
+		<Label text="Gender"/>
+		<Text text="{Resume>/Personal/Misc/Gender}"/>
+		<Label text="Current Location"/>
+		<Text text="{Resume>/Personal/Misc/CurrentLocation}"/>
+		<Label text="Travel Ready"/>
+		<Text text="{Resume>/Personal/Misc/TravelReady}"/>
+	</forms:SimpleForm>
+</mvc:View>

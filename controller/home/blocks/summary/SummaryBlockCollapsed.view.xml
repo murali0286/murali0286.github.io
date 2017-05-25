@@ -2,15 +2,27 @@
 		  xmlns:layout="sap.ui.layout"
 		  xmlns:forms="sap.ui.layout.form"
 		  xmlns="sap.m">
-	<forms:SimpleForm
-			maxContainerCols="1"
-			layout="ResponsiveGridLayout"
-			width="100%">
-		<layout:VerticalLayout
-			content="{
-				path : 'Resume>/Summary'
-			}">
-			<Label text="{Resume>Point}" design="Bold" class="sapUiTinyMarginBottom"/>
-		</layout:VerticalLayout>
-	</forms:SimpleForm>
+
+	<!--<forms:SimpleForm-->
+			<!--maxContainerCols="1"-->
+			<!--layout="ResponsiveGridLayout"-->
+			<!--width="100%">-->
+		<!--<layout:VerticalLayout-->
+			<!--content="{-->
+				<!--path : 'Resume>/Summary'-->
+			<!--}">-->
+			<!--<Label text="{Resume>Point}" design="Bold" class="sapUiTinyMarginBottom"/>-->
+		<!--</layout:VerticalLayout>-->
+	<!--</forms:SimpleForm>-->
+	<List items="{Resume>/Summary}">
+		<items>
+			<StandardListItem
+					title="{Resume>Point}"
+					description=""
+					icon=""
+					iconDensityAware="false"
+					iconInset="false"
+			/>
+		</items>
+	</List>
 </mvc:View>

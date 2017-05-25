@@ -1,0 +1,44 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          xmlns:forms="sap.ui.layout.form"
+          xmlns:core="sap.ui.core"
+          xmlns:layout="sap.ui.layout" xmlns="sap.m">
+
+    <forms:SimpleForm labelSpanL="4"
+                      labelSpanM="4"
+                      labelSpanS="4"
+                      emptySpanL="0"
+                      emptySpanM="0"
+                      emptySpanS="0"
+                      maxContainerCols="2"
+                      layout="ResponsiveLayout" width="100%">
+        <core:Title text="Social Accounts"/>
+
+        <Label text="LinkedIn"/>
+        <layout:VerticalLayout width="100%">
+            <layout:HorizontalLayout>
+                <Image
+                        src="{Resume>/Personal/Social/LinkedInLogo}"
+                        width="21px" class="sapUiTinyMarginEnd"/>
+                <Text text="/{Resume>/Personal/Social/LinkedIn}"/>
+            </layout:HorizontalLayout>
+        </layout:VerticalLayout>
+        <Label text="Twitter"/>
+        <layout:VerticalLayout width="100%">
+            <layout:HorizontalLayout>
+                <Image src="{Resume>/Personal/Social/TwitterLogo}"
+                       width="21px" class="sapUiTinyMarginEnd" />
+                <Text text="@{Resume>/Personal/Social/Twitter}"/>
+            </layout:HorizontalLayout>
+        </layout:VerticalLayout>
+
+        <Label text="SAP"/>
+        <layout:VerticalLayout width="100%">
+            <layout:HorizontalLayout>
+                <Image src="{Resume>/Personal/Social/SAPLogo}"
+                       width="21px" class="sapUiTinyMarginEnd"/>
+                <Text text="/{Resume>/Personal/Social/SAP}"/>
+            </layout:HorizontalLayout>
+        </layout:VerticalLayout>
+
+    </forms:SimpleForm>
+</mvc:View>

@@ -1,0 +1,22 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+		  xmlns:layout="sap.ui.layout"
+		  xmlns:forms="sap.ui.layout.form"
+		  xmlns="sap.m">
+	<forms:SimpleForm
+			maxContainerCols="1"
+			layout="ResponsiveGridLayout"
+			width="100%">
+		<layout:VerticalLayout
+			content="{path : 'Resume>/Misc/Achievements'}">
+			<Text text="{Resume>Description}" class="sapUiTinyMarginTopBottom"/>
+		</layout:VerticalLayout>
+	</forms:SimpleForm>
+	<!--<List items="{Resume>/Misc/Achievements}">-->
+		<!--<items>-->
+			<!--<StandardListItem-->
+					<!--title="{Resume>Description}"-->
+					<!--iconDensityAware="false"-->
+					<!--iconInset="false"/>-->
+		<!--</items>-->
+	<!--</List>-->
+</mvc:View>

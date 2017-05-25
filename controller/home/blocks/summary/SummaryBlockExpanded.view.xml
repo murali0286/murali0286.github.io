@@ -2,24 +2,34 @@
           xmlns:layout="sap.ui.layout"
           xmlns:forms="sap.ui.layout.form"
           xmlns="sap.m">
-    <forms:SimpleForm
-            maxContainerCols="1"
-            layout="ResponsiveGridLayout"
-            width="100%">
-        <layout:VerticalLayout
-                content='{
-				path : "Resume>/Summary"
-				}'>
-            <FlexBox
-                    alignItems="Start"
-                    justifyContent="Start"
-                    direction="Column"
-                >
-                <items>
-                    <Label text="{Resume>Point}" design="Bold"/>
-                    <Text text="{Resume>Description}" class="sapUiTinyMarginBottom"/>
-                </items>
-            </FlexBox>
-        </layout:VerticalLayout>
-    </forms:SimpleForm>
+    <!--<forms:SimpleForm-->
+            <!--maxContainerCols="1"-->
+            <!--layout="ResponsiveGridLayout"-->
+            <!--width="100%">-->
+        <!--<layout:VerticalLayout-->
+                <!--content='{-->
+				<!--path : "Resume>/Summary"-->
+				<!--}'>-->
+            <!--<FlexBox-->
+                    <!--alignItems="Start"-->
+                    <!--justifyContent="Start"-->
+                    <!--direction="Column"-->
+                <!--&gt;-->
+                <!--<items>-->
+                    <!--<Label text="{Resume>Point}" design="Bold"/>-->
+                    <!--<Text text="{Resume>Description}" class="sapUiTinyMarginBottom"/>-->
+                <!--</items>-->
+            <!--</FlexBox>-->
+        <!--</layout:VerticalLayout>-->
+    <!--</forms:SimpleForm>-->
+    <List items="{Resume>/Summary}">
+        <items>
+            <StandardListItem
+                    title="{Resume>Point}"
+                    description="{Resume>Description}"
+                    icon=""
+                    iconDensityAware="false"
+                    iconInset="false"/>
+        </items>
+    </List>
 </mvc:View>
