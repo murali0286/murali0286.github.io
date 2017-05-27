@@ -67,12 +67,225 @@
       "Description": "Experienced in end-to-end quality assurance and testing. Have involved in various kinds of testing including functional, security and performance testing"
     }
   ],
+  "Projects": [
+    {
+      "Name": "Bhavya Soft, UI5",
+      "Client": "Freelancing",
+      "Duration": "April 2017 – Till Date (1.5 months)",
+      "Position": "UI5 Developer",
+      "Description": "Bhavyasoft is a Jeweller in India who is trying to establish an enterprise application for their business needs. Customer is focused on extending their business and was looking out for enterprise solutions",
+      "Roles": [
+        {
+          "Value": "Open UI5 consultant and developer responsible for design and implementation of end-to-end UI5 application",
+          "Style": "Information"
+        },
+        {
+          "Value": "Discuss with customer, understand their business needs and challenges, provide an end-to-end solution that takes their business to the next step",
+          "Style": "Information"
+        },
+        {
+          "Value": "Designed a variant configuration management solution that simplifies the business challenges",
+          "Style": "Information"
+        },
+        {
+          "Value": "Deploy the app in FLP and customize the standard themes to match the brand theming",
+          "Style": "Information"
+        }
+      ]
+    },
+    {
+      "Name": "Aeon Products, UI5",
+      "Client": "Freelancing",
+      "Duration": "Feb 2017 – April 2017",
+      "Position": "UI5 Developer",
+      "Description": "Aeon products is a fine offset printer and in-house manufacturer of cartons, bags, brochures and other various paper products. It is a combined resources of printing and packaging solutions. It has a employee work force of 100 members including technical and commercial staff. Organization has been in market since 2004 and its plants has been accredited with ISO 9001:2008",
+      "Roles": [
+        {
+          "Value": "Open UI5 consultant and developer responsible for design and implementation of end-to-end UI5 application",
+          "Style": "Information"
+        },
+        {
+          "Value": "Discuss with customer, understand their business needs and challenges, provide an end-to-end solution that takes their business to the next step",
+          "Style": "Information"
+        },
+        {
+          "Value": "Designed a variant configuration management solution that simplifies the business challenges",
+          "Style": "Information"
+        },
+        {
+          "Value": "Deploy the app in FLP and customize the standard themes to match the brand theming",
+          "Style": "Information"
+        }
+      ]
+    },
+    {
+      "Name": "Load & Performance Engineering ,UI5 - PayPal",
+      "Client": "PayPal India Pvt Ltd, Bangalore",
+      "Duration": "Dec 2015 – Till Date (1.6 years)",
+      "Position": "Software Engineer 3 & MTS1",
+      "Description": "Load and Performance Team (LnP) in PayPal is the team that handles all the LnP requirements of PayPal projects. This team is responsible to certify PayPal products w.r.t load and performance numbers before the project hits live. They are also responsible to monitor live environments for any performance deviations",
+      "Roles": [
+        {
+          "Value": "Front end developer responsible for developing an application that caters the LnP needs of a developer as a service.",
+          "Style": "Information"
+        },
+        {
+          "Value": "Architected and implemented the UI front using Open UI5 and Node JS",
+          "Style": "Information"
+        },
+        {
+          "Value": "Migrated Vanilla JS project to Open UI5 and it was well received and appreciated by the management teams.",
+          "Style": "Information"
+        },
+        {
+          "Value": "Designed and integrated 3rd party libraries like Highcharts, moment.js with UI5 application.",
+          "Style": "Information"
+        },
+        {
+          "Value": "Implementing a hybrid app using Phonegap",
+          "Style": "Information"
+        },
+        {
+          "Value": "Designed and implemented Service Worker API to achieve Offline app capabilities",
+          "Style": "Information"
+        },
+        {
+          "Value": "Integrated Rest APIs with UI5 application",
+          "Style": "Information"
+        },
+        {
+          "Value": "Designed and implemented live chart capabilities in UI5 application with the help node sockets",
+          "Style": "Information"
+        },
+        {
+          "Value": "Customizing the Open UI5 themes so it matches the PayPal branding themes",
+          "Style": "Information"
+        },
+        {
+          "Value": "Responsible for implementing MVC design patterns in UI",
+          "Style": "Information"
+        }
+      ]
+    },
+    {
+      "Name": "Mertics - PayPal",
+      "Client": "PayPal India Pvt Ltd, Bangalore",
+      "Duration": "May 2014 – Dec 2015",
+      "Position": "Software Engineer 3",
+      "Description": "Metrics team is an internal team that handles all the metrics and analytics that are majorly tracked at org level. This team is responsible for reporting data that helps stakeholders understands the quality of the product, health of PayPal application in live w.r.t to our quality goals. The data that we are reporting plays a key role in defining the quality goals of PayPal every year",
+      "Roles": [
+        {
+          "Value": "Full stack developer responsible for developing an application that addresses metrics requirements from PayPal top management and leaders",
+          "Style": "Information"
+        },
+        {
+          "Value": "Build Rest APIs that fetches defects details from JIRA and present the data based on the user needs (Current open bugs in Live, Defects that are our of SLA, Security related defects and so on)",
+          "Style": "Information"
+        },
+        {
+          "Value": "Build an UI that gives data at high level (Graphs) and more granular level (Tables) so user gets the best of both worlds",
+          "Style": "Information"
+        },
+        {
+          "Value": "Maintain the quality of the portal by keeping the defect count at the defined range",
+          "Style": "Information"
+        },
+        {
+          "Value": "Implement CI so people can focus more on coding than other steps in keeping up the project",
+          "Style": "Information"
+        },
+        {
+          "Value": "Write Test suites for all new changes that covers unit, integration and functional areas",
+          "Style": "Information"
+        },
+        {
+          "Value": "Validate the accuracy of the data that we collect from various sources to build the reports",
+          "Style": "Information"
+        },
+        {
+          "Value": "Measure code coverage and maintain the coverage above the defined level",
+          "Style": "Information"
+        }
+      ]
+    },
+    {
+      "Name": "Application Security - PayPal",
+      "Client": "Computer Services Corporation Ltd, Chennai",
+      "Duration": "April 2011 – May 2014",
+      "Position": "Full Stack Developer & Security Tester",
+      "Description": "PayPal - AppSec Team: AppSec team deals with security related projects in PayPal and we have been mainly focused on improving the security of PayPal.  We build and deliver security frameworks for PayPal.  We also deal with live security issues as and when something (if any) pops up. \n\n Besides our usual project deliverables, we also deal with different cross vertical teams every day, creating security awareness and help them bring in security into the product at the earliest",
+      "Roles": [
+        {
+          "Value": "Full stack developer responsible for building dashboard that captures all the live security defects which will collate and populate the all security issues and statuses in one place",
+          "Style": "Information"
+        },
+        {
+          "Value": "Security Tester responsible for validating all live security issues (Bug Bounty issues) and assign to the respective teams, follow up with the dev team, suggest the fix and validate the code change",
+          "Style": "Information"
+        },
+        {
+          "Value": "Automated and Introduced organizational level Test suite (Security Acceptance Test - SAT) that runs against every PayPal build before it goes to testers to certify it",
+          "Style": "Information"
+        },
+        {
+          "Value": "Responsible for testing various Security projects / Frameworks that PayPal delivers",
+          "Style": "Information"
+        },
+        {
+          "Value": "Roll out the framework and giving demo to cross vertical team in order to bring in the security at the earliest",
+          "Style": "Information"
+        },
+        {
+          "Value": "Live Security Issue Support: Reaching out to the corresponding cross vertical team and help them understanding the issue. Help them providing an efficient fix and push it to live",
+          "Style": "Information"
+        },
+        {
+          "Value": "Vulnerability Assessment testing for any new features in PayPal on demand",
+          "Style": "Information"
+        }
+      ]
+    },
+    {
+      "Name": "EDT, EBay Inc",
+      "Client": "Cognizant Technology Solutions, Chennai",
+      "Duration": "April 2010  - April 2011",
+      "Position": "Quality Analyst",
+      "Description": "eBay Inc. is an American Internet company that manages eBay.com, an online auction and shopping website in which people and businesses buy and sell a broad variety of goods and services worldwide. The majority of the sales take place through a set-time auction format, but subsequent methods include a substantial segment of listings in the 'Buy It Now' category",
+      "Roles": [
+        {
+          "Value": "Automation test engineer responsible for building and maintaining an automated test suite using Selenium",
+          "Style": "Information"
+        },
+        {
+          "Value": "Responsible for establishing CI pipeline",
+          "Style": "Information"
+        }
+      ]
+    },
+    {
+      "Name": "EarthLink",
+      "Client": "Computer Services Corporation Ltd, Chennai",
+      "Duration": "April 2008 – March 2010",
+      "Position": "Quality Analyst",
+      "Description": "EarthLink is an award-winning Internet service provider - ISP - with more than 14 years of experience as a dial-up Internet provider and over 10 years as a broadband Internet provider. Our low cost dial up access and broadband Internet services (DSL Internet and Cable Internet) have been given many best ISP awards, readers' choice awards, and other Internet service provider accolades based on the quality of our service and support. They also offer an innovative high speed DSL and home phone service bundle. Apart from these, they also offer many VAS products such as Toolbar, BART (Integrated Portal), PCC & ISP (Anti-Virus software)",
+      "Roles": [
+        {
+          "Value": "Quality Assurance Engineer responsible for certifying new releases and code changes",
+          "Style": "Information"
+        },
+        {
+          "Value": "Test Plan and Test case document creation. Functional, Compatibility & Regression testing. Involved in Production support and release testing",
+          "Style": "Information"
+        }
+      ]
+    }
+  ],
   "Employment": {
     "Current": {
       "EmployerName": "PayPal India Pvt. Ltd",
       "Logo": "./resources/images/logo/PayPal.png",
       "JobTitle": "MTS1",
-      "Role": "",
+      "Role": "UI5, Frontend & Full stack development",
       "Description": "",
       "From": "May 2014"
     },
@@ -172,32 +385,32 @@
     },
     "Social": {
       "LinkedIn": "murali-lakshmanan-15ab66b1",
-      "LinkedInLogo" : "./resources/images/logo/linkedin.svg",
+      "LinkedInLogo": "./resources/images/logo/linkedin.svg",
       "Twitter": "murali0286",
-      "TwitterLogo" :"./resources/images/logo/twitter.svg",
+      "TwitterLogo": "./resources/images/logo/twitter.svg",
       "SAP": "murali0286",
-      "SAPLogo" : "./resources/images/logo/SAP.gif",
+      "SAPLogo": "./resources/images/logo/SAP.gif",
       "Skype": "murali0286",
-      "SkypeLogo" : "./resources/images/logo/twitter.svg"
+      "SkypeLogo": "./resources/images/logo/twitter.svg"
     },
     "Address": {
       "Permanent": {
-        "Address1" : "F1, Anantham Nivas Apartment,",
-        "Address2" : "Vel Murugan Nagar, 1st Main Road,",
+        "Address1": "F1, Anantham Nivas Apartment,",
+        "Address2": "Vel Murugan Nagar, 1st Main Road,",
         "City": "Pondicherry",
-        "Pincode" : "605013"
+        "Pincode": "605013"
       },
       "Current": {
-        "Address1" : "A606, Confident Aquila Apartments, ",
-        "Address2" : "Sarjapur Road,",
-        "City" : "Bangalore",
-        "Pincode" : "562125"
+        "Address1": "A606, Confident Aquila Apartments, ",
+        "Address2": "Sarjapur Road,",
+        "City": "Bangalore",
+        "Pincode": "562125"
       }
     },
     "EMail": {
       "Primary": "murali0286@gmail.com"
     },
-    "Misc" : {
+    "Misc": {
       "DOB": "02-Aug-1986",
       "MaritalStatus": "Married",
       "Languages": "English, Tamil",
@@ -205,11 +418,11 @@
       "MotherName": "Santhi",
       "Gender": "Male",
       "CurrentLocation": "Bangalore, India",
-      "TravelReady" : "Yes, B1 Visa (Valid till 2022)",
-      "Travel" : {
-        "Ready" : "Yes",
-        "Visa" : "B1 Visa",
-        "Validity" : "Valid till 2022"
+      "TravelReady": "Yes, B1 Visa (Valid till 2022)",
+      "Travel": {
+        "Ready": "Yes",
+        "Visa": "B1 Visa",
+        "Validity": "Valid till 2022"
       }
     }
   }

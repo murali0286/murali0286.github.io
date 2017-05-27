@@ -11,7 +11,7 @@
           xmlns:personal="app.root.controller.home.blocks.personal"
           xmlns:project="app.root.controller.home.blocks.project">
 
-    <Page title="{i18n>title}">
+    <Page title="{i18n>title}" enableScrolling="false">
         <content>
             <uxap:ObjectPageLayout
                     id="ObjectPageLayout"
@@ -110,16 +110,11 @@
                     </uxap:ObjectPageSection>
 
                     <!--Project Details-->
-                    <uxap:ObjectPageSection title="Projects">
+                    <uxap:ObjectPageSection title="Projects" subSections="{path : 'Resume>/Projects'}">
                         <uxap:subSections>
-                            <uxap:ObjectPageSubSection title="SAP UI / Fiori">
+                            <uxap:ObjectPageSubSection title="{Resume>Name}">
                                 <uxap:blocks>
-                                    <!--<project:CurrentEmploymentBlock id="CurrentEmploymentBlock"/>-->
-                                </uxap:blocks>
-                            </uxap:ObjectPageSubSection>
-                            <uxap:ObjectPageSubSection title="Tool Development">
-                                <uxap:blocks>
-                                    <!--<project:PreviousEmploymentBlock id="PreviousEmploymentBlock"/>-->
+                                    <project:ProjectBlock />
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>

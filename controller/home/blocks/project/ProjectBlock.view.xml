@@ -1,0 +1,80 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+		  xmlns:core="sap.ui.core"
+		  xmlns:l="sap.ui.layout"
+		  xmlns:f="sap.ui.layout.form"
+		  xmlns="sap.m">
+	<f:Form id="host"
+			minWidth="1024"
+			maxContainerCols="2"
+			editable="true">
+		<f:layout>
+			<f:ResponsiveGridLayout
+					labelSpanL="1"
+					labelSpanM="1"
+					emptySpanL="1"
+					emptySpanM="1"
+					columnsL="1"
+					columnsM="1"/>
+		</f:layout>
+		<f:FormContainer>
+			<f:formElements>
+				<f:FormElement label="Client Name"
+							   class="sapUiResponsiveContentPadding">
+					<f:fields>
+						<Label text="{Resume>Client}" design="Bold"/>
+					</f:fields>
+				</f:FormElement>
+				<f:FormElement label="Duration"
+							   class="sapUiResponsiveContentPadding">
+					<f:fields>
+						<Text text="{Resume>Duration}"/>
+					</f:fields>
+				</f:FormElement>
+				<f:FormElement label="Position"
+							   class="sapUiResponsiveContentPadding">
+					<f:fields>
+						<Text text="{Resume>Position}"/>
+					</f:fields>
+				</f:FormElement>
+				<f:FormElement label="Description"
+							   class="sapUiResponsiveContentPadding">
+					<f:fields>
+						<Text text="{Resume>Description}" wrapping="true"/>
+					</f:fields>
+				</f:FormElement>
+			</f:formElements>
+		</f:FormContainer>
+		<f:FormContainer formElements="{path : 'Resume>Roles'}">
+			<f:formElements>
+				<f:FormElement>
+					<f:fields>
+						<MessageStrip text="{Resume>Value}" type="{Resume>Style}" showIcon="false" class=""></MessageStrip>
+						<!--<VBox>-->
+							<!--<FormattedText htmlText="{Resume>Value}"/>-->
+						<!--</VBox>-->
+					</f:fields>
+					<!--<Panel>-->
+						<!--<headerToolbar>-->
+							<!--<Toolbar>-->
+								<!--<Title level="H5" text="Roles and Responsibilities" />-->
+							<!--</Toolbar>-->
+						<!--</headerToolbar>-->
+						<!--<FlexBox-->
+								<!--direction="Column"-->
+								<!--alignItems="Start"-->
+								<!--items="{path : 'Resume>Roles'}">-->
+							<!--<items>-->
+								<!--<MessageStrip text="{Resume>Value}" type="{Resume>Style}" showIcon="false" class="" >-->
+									<!--<layoutData>-->
+										<!--<FlexItemData growFactor="1" />-->
+									<!--</layoutData>-->
+								<!--</MessageStrip>-->
+								<!--&lt;!&ndash;<FormattedText htmlText="{Resume>Value}"/>&ndash;&gt;-->
+							<!--</items>-->
+						<!--</FlexBox>-->
+					<!--</Panel>-->
+				</f:FormElement>
+			</f:formElements>
+		</f:FormContainer>
+	</f:Form>
+</mvc:View>
