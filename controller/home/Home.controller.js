@@ -1,6 +1,9 @@
 sap.ui.define([
-	"app/root/controller/BaseController"
-], function(BaseController) {
+	"app/root/controller/BaseController",
+    'sap/m/Dialog',
+    'sap/m/Button',
+    'sap/m/Text'
+], function(BaseController, Dialog, Button, Text) {
 	"use strict";
 
 	return BaseController.extend("app.root.controller.home.Home", {
@@ -59,6 +62,32 @@ sap.ui.define([
 
         handleCloseButton: function (oEvent) {
             this._oPopover.close();
-        }
+        },
+
+        onDownloadResumeDialog: function () {
+            var dialog = new Dialog({
+                title: 'Do you want to download my Resume?',
+                type: 'Message',
+                content: new Text({ text: 'Do you want to download my Resume?' }),
+                beginButton: [new Button({
+                    text: 'Yes, Download',
+                    press: function (oEvent) {
+                       this.onDownloadResume(oEvent);
+                        dialog.close();
+                    }.bind(this)
+                }), this],
+                endButton: new Button({
+                    text: 'No, Thanks',
+                    press: function () {
+                        dialog.close();
+                    }
+                }),
+                afterClose: function() {
+                    dialog.destroy();
+                }
+            });
+
+            dialog.open();
+        },
 	});
 });
