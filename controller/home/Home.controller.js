@@ -29,10 +29,6 @@ sap.ui.define([
 
 		},
 
-        onDownloadProofDocument : function(oEvent) {
-		  debugger;
-        },
-
         onDownloadResume : function(oEvent) {
             var link = document.createElement("a");
             link.download = this._oResumeModel.getProperty("/Header/ResumeName");

@@ -4,8 +4,8 @@
     "SubTitle": "SAP UI5/Fiori Architecture, Design and Development",
     "Avatar": "./resources/images/person/01.JPG",
     "ShortIntro": "A passionate software engineer who has 8+ years of total experience in Fiori, UI development, Full stack development and Quality Assurance.",
-    "ResumeLocation" : "./resources/resume/Murali_Resume_UI5.pdf",
-    "ResumeName" : "Murali_Resume_UI5.pdf"
+    "ResumeLocation": "./resources/resume/Murali_Resume_UI5.pdf",
+    "ResumeName": "Murali_Resume_UI5.pdf"
   },
   "Summary": [
     {
@@ -360,15 +360,15 @@
     "Achievements": [
       {
         "Description": "Received SPOT award for my contributions in PayPal Metrics Portal application development",
-        "Document" : ""
+        "Document": ""
       },
       {
         "Description": "Received glowing reviews and appreciations from top management for successful Open UI5 transformation project in LnP team",
-        "Document" : ""
+        "Document": ""
       },
       {
         "Description": "Have been rewarded consistently and promoted twice for my contributions and ability to deliver high quality products",
-        "Document" : ""
+        "Document": ""
       }
     ],
     "Strengths": [
@@ -398,6 +398,28 @@
       "Skype": "murali0286",
       "SkypeLogo": "./resources/images/logo/Skype.svg"
     },
+    "Socials": [
+      {
+        "Name": "murali-lakshmanan-15ab66b1",
+        "URL": "https://www.linkedin.com/in/murali-lakshmanan-15ab66b1/",
+        "Logo": "./resources/images/logo/linkedin.svg"
+      },
+      {
+        "Name": "murali0296",
+        "URL": "https://twitter.com/murali0286/",
+        "Logo": "./resources/images/logo/twitter.svg"
+      },
+      {
+        "Name": "murali0286",
+        "URL": "https://people.sap.com/murali0286",
+        "Logo": "./resources/images/logo/SAP.svg"
+      },
+      {
+        "Name": "murali0286",
+        "URL": "skype:murali0286?chat",
+        "Logo": "./resources/images/logo/Skype.svg"
+      }
+    ],
     "Address": {
       "Permanent": {
         "Address1": "F1, Anantham Nivas Apartment,",
