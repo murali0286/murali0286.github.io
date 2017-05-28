@@ -9,7 +9,15 @@
 		<layout:VerticalLayout
 			content="{path : 'Resume>/Misc/Achievements'}">
 			<Text text="{Resume>Description}" class="sapUiTinyMarginTopBottom"/>
+			<!--<HBox>-->
+				<!--<Text text="{Resume>Description}" class="sapUiTinyMarginTopBottom" width="80%"/>-->
+				<!--<Button icon="sap-icon://download-from-cloud" text="View Document" type="Emphasized" width="20%" press="onDownloadProofDocument" class="sapUiTinyMarginTopBottom"/>-->
+			<!--</HBox>-->
+			<!--<Button icon="sap-icon://download-from-cloud"  type="Emphasized" press="onDownloadProofDocument" class="sapUiTinyMarginTopBottom"/>-->
 		</layout:VerticalLayout>
+		<!--<layout:VerticalLayout>-->
+			<!--<Button text="{Resume>Description}" class="sapUiTinyMarginTopBottom"/>-->
+		<!--</layout:VerticalLayout>-->
 	</forms:SimpleForm>
 	<!--<List items="{Resume>/Misc/Achievements}">-->
 		<!--<items>-->

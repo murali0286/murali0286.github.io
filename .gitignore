@@ -3,3 +3,5 @@
 .idea/vcs.xml
 
 resources/resume/~$rali_Resume_UI5.doc
+
+node_modules/*

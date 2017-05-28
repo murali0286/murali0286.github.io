@@ -1,9 +1,11 @@
 {
   "Header": {
     "Title": "Murali Lakshmanan",
-    "SubTitle": "SAPUI5/Fiori consultant, UI Developer",
-    "Avatar": "./resources/images/person/2.jpg",
-    "ShortIntro": "A passionate software engineer who has 8+ years of total experience in Fiori, UI development, Full stack development and Quality Assurance."
+    "SubTitle": "SAP UI5/Fiori Architecture, Design and Development",
+    "Avatar": "./resources/images/person/01.JPG",
+    "ShortIntro": "A passionate software engineer who has 8+ years of total experience in Fiori, UI development, Full stack development and Quality Assurance.",
+    "ResumeLocation" : "./resources/resume/Murali_Resume_UI5.pdf",
+    "ResumeName" : "Murali_Resume_UI5.pdf"
   },
   "Summary": [
     {
@@ -80,7 +82,7 @@
           "Style": "Information"
         },
         {
-          "Value": "Discuss with customer, understand their business needs and challenges, provide an end-to-end solution that takes their business to the next step",
+          "Value": "Collaborate with customers, designed and developed an end-to-end solution",
           "Style": "Information"
         },
         {
@@ -105,7 +107,7 @@
           "Style": "Information"
         },
         {
-          "Value": "Discuss with customer, understand their business needs and challenges, provide an end-to-end solution that takes their business to the next step",
+          "Value": "Collaborate with customers, designed and developed an end-to-end solution",
           "Style": "Information"
         },
         {
@@ -357,13 +359,16 @@
   "Misc": {
     "Achievements": [
       {
-        "Description": "Received SPOT award for my contributions in PayPal Metrics Portal application development"
+        "Description": "Received SPOT award for my contributions in PayPal Metrics Portal application development",
+        "Document" : ""
       },
       {
-        "Description": "Received glowing reviews and appreciations from top management for successful Open UI5 transformation project in LnP team"
+        "Description": "Received glowing reviews and appreciations from top management for successful Open UI5 transformation project in LnP team",
+        "Document" : ""
       },
       {
-        "Description": "Have been rewarded consistently and promoted twice for my contributions and ability to deliver high quality products"
+        "Description": "Have been rewarded consistently and promoted twice for my contributions and ability to deliver high quality products",
+        "Document" : ""
       }
     ],
     "Strengths": [

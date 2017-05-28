@@ -29,10 +29,14 @@ sap.ui.define([
 
 		},
 
+        onDownloadProofDocument : function(oEvent) {
+		  debugger;
+        },
+
         onDownloadResume : function(oEvent) {
             var link = document.createElement("a");
-            link.download = "Murali_Resume.doc";
-            link.href = "./resources/resume/Murali_Resume_UI5.doc";
+            link.download = this._oResumeModel.getProperty("/Header/ResumeName");
+            link.href = this._oResumeModel.getProperty("/Header/ResumeLocation");
             link.click();
 		},
 

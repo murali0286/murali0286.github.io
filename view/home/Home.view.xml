@@ -31,8 +31,8 @@
                             objectSubtitle="{Resume>/Header/SubTitle}">
                         <uxap:actions>
                             <uxap:ObjectPageHeaderActionButton
-                                    icon="sap-icon://pull-down"
-                                    text="show section"
+                                    icon="sap-icon://download-from-cloud"
+                                    text="Download Murali's Resume"
                                     type="Emphasized"
                                     press="onDownloadResume"/>
                         </uxap:actions>
