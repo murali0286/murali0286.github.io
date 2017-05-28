@@ -40,5 +40,14 @@
             </layout:HorizontalLayout>
         </layout:VerticalLayout>
 
+        <Label text="Skype"/>
+        <layout:VerticalLayout width="100%">
+            <layout:HorizontalLayout>
+                <Image src="{Resume>/Personal/Social/SkypeLogo}"
+                       width="21px" class="sapUiTinyMarginEnd"/>
+                <Text text="/{Resume>/Personal/Social/Skype}"/>
+            </layout:HorizontalLayout>
+        </layout:VerticalLayout>
+
     </forms:SimpleForm>
 </mvc:View>
