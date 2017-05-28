@@ -146,7 +146,7 @@
                                     <personal:MailingBlock id="MailingBlock" columnLayout="1"/>
                                     <personal:AdressBlock id="AdressBlock"/>
                                     <personal:SocialBlock id="SocialBlock"/>
-                                    <personal:OtherBlock id="OtherBlock" />
+                                    <personal:OtherBlock id="OtherBlock" columnLayout="3"/>
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>

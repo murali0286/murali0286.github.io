@@ -1,7 +1,10 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc"
+<mvc:View
+        controllerName="app.root.controller.home.blocks.Block"
+        xmlns:mvc="sap.ui.core.mvc"
           xmlns:forms="sap.ui.layout.form"
           xmlns:core="sap.ui.core"
-          xmlns:layout="sap.ui.layout" xmlns="sap.m">
+          xmlns:layout="sap.ui.layout"
+        xmlns="sap.m">
 
     <forms:SimpleForm labelSpanL="4"
                       labelSpanM="4"
@@ -17,6 +20,7 @@
         <layout:VerticalLayout width="100%">
             <layout:HorizontalLayout>
                 <Image
+                        press="onPressLinkedIn"
                         src="{Resume>/Personal/Social/LinkedInLogo}"
                         width="21px" class="sapUiTinyMarginEnd"/>
                 <Text text="/{Resume>/Personal/Social/LinkedIn}"/>
@@ -25,8 +29,9 @@
         <Label text="Twitter"/>
         <layout:VerticalLayout width="100%">
             <layout:HorizontalLayout>
-                <Image src="{Resume>/Personal/Social/TwitterLogo}"
-                       width="21px" class="sapUiTinyMarginEnd" />
+                <Image press="onPressTwitter"
+                       src="{Resume>/Personal/Social/TwitterLogo}"
+                       width="21px" class="sapUiTinyMarginEnd"/>
                 <Text text="@{Resume>/Personal/Social/Twitter}"/>
             </layout:HorizontalLayout>
         </layout:VerticalLayout>
@@ -34,7 +39,8 @@
         <Label text="SAP"/>
         <layout:VerticalLayout width="100%">
             <layout:HorizontalLayout>
-                <Image src="{Resume>/Personal/Social/SAPLogo}"
+                <Image press="onPressSAP"
+                       src="{Resume>/Personal/Social/SAPLogo}"
                        width="21px" class="sapUiTinyMarginEnd"/>
                 <Text text="/{Resume>/Personal/Social/SAP}"/>
             </layout:HorizontalLayout>
@@ -43,8 +49,10 @@
         <Label text="Skype"/>
         <layout:VerticalLayout width="100%">
             <layout:HorizontalLayout>
-                <Image src="{Resume>/Personal/Social/SkypeLogo}"
-                       width="21px" class="sapUiTinyMarginEnd"/>
+                <Image
+                        press="onPressSkype"
+                        src="{Resume>/Personal/Social/SkypeLogo}"
+                        width="21px" class="sapUiTinyMarginEnd"/>
                 <Text text="/{Resume>/Personal/Social/Skype}"/>
             </layout:HorizontalLayout>
         </layout:VerticalLayout>

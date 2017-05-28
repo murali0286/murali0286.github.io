@@ -6,6 +6,9 @@ sap.ui.define([
 
     var SocialBlock = BlockBase.extend("app.root.controller.home.blocks.personal.SocialBlock", {
         metadata: {
+            events : {
+              press: {}
+            },
             views: {
                 Collapsed: {
                     viewName: "app.root.controller.home.blocks.personal.SocialBlock",
