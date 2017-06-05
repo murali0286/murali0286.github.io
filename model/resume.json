@@ -289,9 +289,18 @@
       "JobTitle": "MTS1",
       "Role": "UI5, Frontend & Full stack development",
       "Description": "",
-      "From": "May 2014"
+      "From": "April 2017"
     },
     "Previous": [
+      {
+        "EmployerName": "PayPal India Pvt. Ltd",
+        "Logo": "./resources/images/logo/PayPal.png",
+        "JobTitle": "Software Engineer 3",
+        "Role": "UI5, Frontend & Full stack development",
+        "Description": "",
+        "From": "May 2014",
+        "Till": "April 2017"
+      },
       {
         "EmployerName": "Computer Services Corporations India Pvt., CSC",
         "Logo": "./resources/images/logo/csc.svg",
@@ -307,8 +316,17 @@
         "JobTitle": "Programmer Analyst",
         "Role": "",
         "Description": "",
-        "From": "Dec 2017",
+        "From": "Jan 2010",
         "Till": "May 2011"
+      },
+      {
+        "EmployerName": "Congnizant Technology Solutions India Pvt., CTS",
+        "Logo": "./resources/images/logo/cts.png",
+        "JobTitle": "Programmer ",
+        "Role": "",
+        "Description": "",
+        "From": "Dec 2007",
+        "Till": "Jan 2010"
       }
     ]
   },
