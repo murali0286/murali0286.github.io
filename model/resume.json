@@ -446,6 +446,7 @@
       "Gender": "Male",
       "CurrentLocation": "Bangalore, India",
       "TravelReady": "Yes, B1 Visa (Valid till 2022)",
+      "Availability" : "3 months",
       "Travel": {
         "Ready": "Yes",
         "Visa": "B1 Visa",

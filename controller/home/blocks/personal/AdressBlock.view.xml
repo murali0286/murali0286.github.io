@@ -13,19 +13,19 @@
 			maxContainerCols="2" layout="ResponsiveLayout"
 			width="100%">
 		<core:Title text="Adresses"></core:Title>
-		<Label text="Current Address"/>
+		<Label text="Communication Address"/>
 		<layout:VerticalLayout>
 			<Text text="{Resume>/Personal/Address/Current/Address1}"/>
 			<Text text="{Resume>/Personal/Address/Current/Address2}"/>
 			<Text text="{Resume>/Personal/Address/Current/City}"/>
 			<Text text="{Resume>/Personal/Address/Current/Pincode}"/>
 		</layout:VerticalLayout>
-		<Label text="Permanent Address"/>
-		<layout:VerticalLayout>
-			<Text text="{Resume>/Personal/Address/Permanent/Address1}"/>
-			<Text text="{Resume>/Personal/Address/Permanent/Address2}"/>
-			<Text text="{Resume>/Personal/Address/Permanent/City}"/>
-			<Text text="{Resume>/Personal/Address/Permanent/Pincode}"/>
-		</layout:VerticalLayout>
+		<!--<Label text="Permanent Address"/>-->
+		<!--<layout:VerticalLayout>-->
+			<!--<Text text="{Resume>/Personal/Address/Permanent/Address1}"/>-->
+			<!--<Text text="{Resume>/Personal/Address/Permanent/Address2}"/>-->
+			<!--<Text text="{Resume>/Personal/Address/Permanent/City}"/>-->
+			<!--<Text text="{Resume>/Personal/Address/Permanent/Pincode}"/>-->
+		<!--</layout:VerticalLayout>-->
 	</forms:SimpleForm>
 </mvc:View>
