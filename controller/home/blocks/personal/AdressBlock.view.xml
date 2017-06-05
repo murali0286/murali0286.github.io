@@ -12,7 +12,7 @@
 			emptySpanS="0"
 			maxContainerCols="2" layout="ResponsiveLayout"
 			width="100%">
-		<core:Title text="Adresses"></core:Title>
+		<core:Title text="Addresses"></core:Title>
 		<Label text="Communication Address"/>
 		<layout:VerticalLayout>
 			<Text text="{Resume>/Personal/Address/Current/Address1}"/>
